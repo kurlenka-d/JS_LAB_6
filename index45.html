@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <script>
+        function queryAge() {
+            return prompt('Ваш возраст?');
+        }
+        function checkAge() {
+            if (queryAge() > 18)
+                return true;
+            else
+                return confirm('Родители разрешили?');
+        }
+        if (checkAge())
+            alert('Доступ разрешен');
+        else
+            alert('В доступе отказано');
+    </script>
+</body>
+
+</html>

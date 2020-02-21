@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <script>
+
+        function calcD(a, b, c) {
+            if (Number.isNaN(parseInt(a)) == false || Number.isNaN(parseInt(b)) == false || Number.isNaN(parseInt(c)) == false) return b * b - 4 * a * c;
+            else return 'Вы указали неверное значение!';
+        }
+        var a = prompt('Введите значение переменной а:');
+        var b = prompt('Введите значение переменной b:');
+        var c = prompt('Введите значение переменной c:');
+        var discriminant = calcD(a, b, c);
+        if (isFinite(discriminant)) alert('D=' + discriminant);
+        else alert(discriminant);
+
+    </script>
+</body>
+
+</html>

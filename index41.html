@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <script>
+        var userName = 'Путин';
+        function showMessage() {
+            userName = 'Меркель'; // (1) присвоение во внешнюю переменную 
+            var message = 'Привет, я ' + userName;
+            alert(message);
+        }
+        showMessage();
+        alert(userName); // Меркель, значениевнешней переменной изменено функцией 
+    </script>
+</body>
+
+</html>
